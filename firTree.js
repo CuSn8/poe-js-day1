@@ -15,5 +15,5 @@ function main(rows) {
     console.log(stars[i].join(""));
   }
 }
-main(3);
+main(13);
 module.exports = main;
