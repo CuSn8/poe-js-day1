@@ -1,5 +1,6 @@
 function main(array) {
-    return array.pop();
+  array.pop();
+  return array;
 }
 
 module.exports = main;
