@@ -1,5 +1,6 @@
 function main(array, itemToRemove) {
-  return array.splice(itemToRemove, 1);
+  array.splice(itemToRemove, 1);
+  return array;
 }
 
 module.exports = main;
