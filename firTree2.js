@@ -1,24 +1,21 @@
-function main(rows) {
-  rows = rows * 4;
-  for (let i = 1; i <= rows; i++) {
+function buildFirstBlock(numberOfLines) {
+  let block = [];
+  for (let i = 1; i <= numberOfLines; i++) {
     let row = [];
-    for (let k = rows - i; k >= 0; k--) {
+    for (let j = numberOfLines - i; j > 0; j--) {
+        console.log("j = ", j)
       row.push(" ");
     }
-    for (let j = 1; j <= i; j += 0.5) {
+    for (let k = 1; k <= i; k += 0.5) {
       row.push("*");
     }
-    console.log(row.join(""));
+    console.log(row);
+    block.push(row);
   }
-  for (let l = 1; l <= rows / 4; l++) {
-    let trunkRow = [];
-    for (n = 0; n <= rows - 1; n++) {
-      trunkRow.push(" ");
-    }
-    for (let m = 1; m <= l; m++) {
-      trunkRow.push("|");
-    }
-    console.log(trunkRow.join(""));
-  }
+  return block;
 }
-main(1);
+buildFirstBlock(4).map((row) => console.log(row.join("")));
+
+function buildSubsequentBlocks(firstLine, numberOfLines) {
+for
+}
