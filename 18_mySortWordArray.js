@@ -1,5 +1,5 @@
 function main(array) {
-    return array.sort();
+    return array.split(" ").sort();
 }
 
 module.exports = main;
