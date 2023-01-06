@@ -7,12 +7,4 @@ function myObjectValues(object) {
   return result;
 }
 
-console.log(
-  myObjectValues({
-    name: "Ganster",
-    surname: "Guilian",
-    age: 24,
-    presentation: () => {},
-  })
-);
-// "name: Ganster, surname: Guilian, age: 24"
+module.exports = myObjectValues;
